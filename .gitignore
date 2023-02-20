@@ -1,0 +1,13 @@
+.DS_Store
+.idea/
+.git
+.vscode
+**/jenkins/data/*
+!**/jenkins/data/hudson.model.UpdateCenter.xml
+!**/jenkins/data/updates
+**/gitlab/config/*
+!**/gitlab/config/gitlab.rb
+gitlab/data
+gitlab/logs
+mysql/data
+mysql/logs
