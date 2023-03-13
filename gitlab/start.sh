@@ -1,5 +1,5 @@
 #!/bin/sh
-DEVOPS_HOME=/Volumes/dist/mac-local-devops
+DEVOPS_HOME=$(cd "$(dirname "$0")";dirname "$PWD")
 GITLAB_HOME=$DEVOPS_HOME/gitlab
 docker run -d \
 --hostname gitlab.devops.me \

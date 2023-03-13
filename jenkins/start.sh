@@ -1,5 +1,5 @@
 #!/bin/sh
-DEVOPS_HOME=/Volumes/dist/mac-local-devops
+DEVOPS_HOME=$(cd "$(dirname "$0")";dirname "$PWD")
 JENKINS_PATH=$DEVOPS_HOME/jenkins
 docker run -d \
 --name jenkins \

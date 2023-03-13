@@ -1,5 +1,5 @@
 #!/bin/sh
-DEVOPS_HOME=/Volumes/dist/mac-local-devops
+DEVOPS_HOME=$(cd "$(dirname "$0")";dirname "$PWD")
 MYSQL_PATH=$DEVOPS_HOME/mysql
 docker run -d \
 --name mysql \

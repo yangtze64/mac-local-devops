@@ -1,5 +1,5 @@
 #!/bin/sh
-DEVOPS_HOME=/Volumes/dist/mac-local-devops
+DEVOPS_HOME=$(cd "$(dirname "$0")";dirname "$PWD")
 ETCD_PATH=$DEVOPS_HOME/etcd
 docker run -d \
 --name etcd-gcr-v3.4.0 \

@@ -1,5 +1,5 @@
 #!/bin/sh
-DEVOPS_HOME=/Volumes/dist/mac-local-devops
+DEVOPS_HOME=$(cd "$(dirname "$0")";dirname "$PWD")
 REDIS_PATH=$DEVOPS_HOME/redis
 docker run -d \
 --name redis \

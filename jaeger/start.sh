@@ -1,5 +1,5 @@
 #!/bin/sh
-DEVOPS_HOME=/Volumes/dist/mac-local-devops
+DEVOPS_HOME=$(cd "$(dirname "$0")";dirname "$PWD")
 JAEGER_PATH=$DEVOPS_HOME/jaeger
 docker run -d \
 --name jaeger-all-in-one \
